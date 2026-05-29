@@ -1,7 +1,7 @@
 #!/bin/bash
 
 USERNAME="13607fatima"
-TOKEN="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"
+TOKEN=""
 
 REPO_URL=$(git remote get-url origin | sed 's|https://github.com/||' | sed 's|git@github.com:||')
 
