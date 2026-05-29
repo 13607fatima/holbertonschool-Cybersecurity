@@ -1,7 +1,3 @@
 #!/bin/bash
-#Decimal to Binary 8-bit Converter
-
-for i in {7..0}; do
-    echo -n "$(( ($1 >> i) & 1 ))"
-done
-echo ""
+BINARY=$(echo "obase=2; $1" | bc)
+printf "%08d\n" "$BINARY"
